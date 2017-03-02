@@ -1,0 +1,83 @@
+<script type="text/ng-template" id="tabs.html">               
+
+<aui-side-menus enable-menu-with-back-views="false">
+        <aui-side-menu-content>
+            <aui-nav-bar class="bar-royal">   
+                <aui-nav-back-button>
+                </aui-nav-back-button>
+
+                <aui-nav-buttons side="left">
+                    <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+                </aui-nav-buttons>
+    </aui-nav-bar> 
+   
+     <aui-tabs class="tabs-icon-top tabs-royal">
+        
+        <p style="margin-bottom: 0; margin-top: 12px;font-size: 12px; font-weight: bold; padding: 8px; color: #90A4AE;"></p>
+        <!--<aui-list>
+            <aui-item class="item-item">
+                 <p style="margin-bottom: 0; margin-top: 12px;font-size: 12px; font-weight: bold; padding: 8px; color: #90A4AE;"> 
+                     {{numberItem}} Items in Cart
+                 </p>
+                 <p style="margin-bottom: 0; margin-top: 12px;font-size: 12px; font-weight: bold; padding: 8px; color: #90A4AE;"> 
+                     {{itemBalance}} Balance in Cart
+                 </p>
+            </aui-item>
+        </aui-list>-->
+              
+
+
+        <aui-tab icon-off ="ion-ios-home-outline" icon-on ="ion-ios-home" ui-sref="tab.home">
+            <aui-nav-view name="tab-home"></aui-nav-view>
+        </aui-tab>
+
+        <aui-tab icon-off="ion-ios-cart-outline" icon-on="ion-ios-cart" ui-sref="tab.shoppingCart">
+            <aui-nav-view name="tab-shoppingCart"></aui-nav-view>
+        </aui-tab>
+
+        <aui-tab icon-off ="ion-ios-pie-outline" icon-on ="ion-ios-pie" ui-sref="tab.report">
+            <aui-nav-view name="tab-report"></aui-nav-view>
+        </aui-tab>
+
+
+    </aui-tabs>
+    <aui-nav-view name="menuContent"></aui-nav-view>
+        </aui-side-menu-content>
+    <aui-side-menu side="left">
+            <aui-header-bar class="bar-dark text-right">
+               <!-- <h2>Test</h2> -->
+            </aui-header-bar>
+            <aui-content class="menuContent">
+                <aui-list>
+
+                  <!--  <aui-item class="menuItem item-royal" menu-close ng-click="profile()">
+                        <div class="item-icon-left">
+                            <i class="icon ion-earth"></i>
+                            <p>
+                                Profile
+                            </p>
+                        </div>
+                        <div class="item-icon-right">
+                            <i class="icon ion-ios-arrow-right"></i>
+                        </div>
+                    </aui-item> -->
+                    <aui-item class="menuItem item-royal" menu-close ng-click="logout()">
+                        <div class="item-icon-left">
+                            <i class="icon ion-android-exit"></i>
+                            <p>
+                                Log Out
+                            </p>
+                        </div>
+                        <div class="item-icon-right">
+                            <i class="icon ion-ios-arrow-right"></i>
+                        </div>
+
+                    </aui-item>
+                </aui-list>
+            </aui-content>
+            <aui-footer-bar class="bar-dark text-center">
+            </aui-footer-bar>
+        </aui-side-menu>
+</aui-side-menus>
+   
+</script>

@@ -1,0 +1,60 @@
+$table-head: #ECEFF1;
+$stable: #ECEFF1;
+$light: #F4F5F6;
+
+$md-dark: rgba(0, 0, 0, 0.87);
+$default-dark-color: #444;
+$md-dark-secondary: rgba(0,0,0,0.54);
+$md-dark-disabled: rgba(0, 0, 0, 0.26);
+$md-dark-icon: $md-dark-secondary;
+$md-dark-divider: rgba(0, 0, 0, 0.12);
+
+// table
+$md-dark-row-hover: #EEEEEE;
+$md-dark-row-select: #F5F5F5;
+
+$error-color: #8d1908;
+
+$default_colour: #A68F64;
+$default_pantone: #9d8958;
+
+$default_green: #aba711;
+$default_orange: #ec8100;
+$default_red: #8d1908;
+$default_blue: #4689a4;
+
+
+.default_bg{
+	background-color: $default_colour;
+	color: #FFFFFF;
+}
+
+.green_bg{
+	background-color: $default_green;
+	color: #FFFFFF;
+}
+
+.orange_bg{
+	background-color: $default_orange;
+	color: #FFFFFF;
+}
+
+.red_bg{
+	background-color: $default_red;
+	color: #FFFFFF;
+}
+
+.blue_bg{
+	background-color: $default_blue;
+	color: #FFFFFF;
+}
+
+.black_bg{
+	background-color: #222;
+	color: #FFFFFF;
+}
+
+.grey_bg{
+	background-color: #CCC;
+	color: #BDBDBD;
+}

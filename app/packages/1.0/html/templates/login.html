@@ -1,0 +1,28 @@
+<script type="text/ng-template" id="login.html">
+    <aui-view view-title="Login">
+        <aui-content class="login-back">
+          <!-- <p style="margin-top: 50px; padding: 8px; font-size: 16px; font-weight: 300; text-align:center; color: white">-->
+               <center>
+                <div> 
+                    <img src="img/assets/Britehouse_logo.png" style="margin-top:50px; width:80%">
+                </div>
+                
+                <p style="margin:30px; font-weight: 100; text-align: center; color: #FFF;">Barista App</p>
+               
+                <label class="item item-input" style="margin-top:70px; background-color:transparent; border-bottem:solid; margin-left:25px; margin-right:25px;">                    
+                    <input ng-model="login.credentials.uname" type="text" placeholder="Username">
+                </label>
+                <label class="item item-input" style="margin-top:15px; background-color:transparent; border-bottem:solid; margin-left:25px; margin-right:25px;">                    
+                    <input ng-model="login.credentials.pword" type="password" placeholder="Password">
+                </label>
+                
+                </center>    
+            <div style="padding: 16px; margin-top: 70px;">
+                <button class="button button-calm" ng-click="submitLogin()" style="width: 100%;">
+                    Login
+                </button>
+            </div>
+
+        </aui-content>
+    </aui-view>
+</script>

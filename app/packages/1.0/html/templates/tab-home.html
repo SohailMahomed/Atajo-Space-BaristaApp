@@ -1,0 +1,207 @@
+<script type="text/ng-template" id="tab-home.html">
+<aui-view view-title="Home">
+  
+  <aui-content>
+
+    <aui-refresher pulling-text="Update menu" on-refresh="doRefresh()">
+            </aui-refresher> 
+     <h2 style="margin: 8px; margin-top:12px;"></h2>
+
+     <aui-list>
+                <aui-item class="item" style="margin-top: 54px; text-align:center;"><!--" color: #ef473a;" ng-click="displayCoffee()">-->
+                     <button class="button button-small button-calm" style="float:left;" ng-click="show('div1')" round> Coffee</button>
+                     <button class="button button-small button-calm" style="float:right;" ng-click="show('div2')" round> Tea</button>
+                </aui-item>
+            </aui-list>
+
+            <div ng-show="divShow == 'div1'"> <!-- Coffee -->
+                <div class="list list-inset">                 
+                <div class="item" ng-repeat="item in menuListCoffee"> 
+                <div ng-if="item.name == 'Espresso'">
+                    <label> {{item.name}}</label>
+                    <label style="font-size:16px; margin-left:10px; padding:10px; font-style:bold; line-height:3;"> {{item.price}} </label>
+                    <button class="button button-small button-calm" ng-click="addToCart(item)" style="width: 20%; float:right;">
+                        Add to Cart
+                    </button> 
+                    <object data="img/assets/Espresso_sign.svg" type="image/svg+xml" width="23%" style="float:right; margin-right:-25px;">
+                      <img src="img/png/Espresso sign.png" width="23%" style="float:right; margin-right:-25px;" />
+                    </object>
+                </div>
+                
+                <div ng-if="item.name == 'Americano'">                     
+                    <label> {{item.name}} </label>
+                    <label style="font-size:16px; margin-left:10px; padding:10px; font-style:bold; line-height:3;"> {{item.price}} </label>
+                    <button class="button button-small button-calm" ng-click="addToCart(item)" style="width: 20%; float:right;">
+                        Add to Cart
+                    </button>
+                    <object data="img/assets/Americano.svg" type="image/svg+xml" width="23%" style="float:right; margin-right:-25px;">
+                      <img src="img/png/Americano.png" width="23%" style="float:right; margin-right:-25px;" />
+                    </object>
+                </div>
+
+                <div ng-if="item.name == 'Cappucino'">
+                    <label> {{item.name}} </label>
+                    <label style="font-size:16px; margin-left:10px; padding:10px; font-style:bold; line-height:3;"> {{item.price}} </label>
+                    <button class="button button-small button-calm" ng-click="addToCart(item)" style="width: 20%; float:right;">
+                        Add to Cart
+                    </button>
+                    <object data="img/assets/Cappucino_3.svg" type="image/svg+xml" width="23%" style="float:right; margin-right:-25px;">
+                      <img src="img/png/Cappucino 3.png" width="23%" style="float:right; margin-right:-25px;" />
+                    </object>
+                    <object data="img/assets/Cappucino_2.svg" type="image/svg+xml" width="23%" style="float:right; margin-right:-25px;">
+                      <img src="img/png/Cappucino 2.png" width="23%" style="float:right; margin-right:-25px;" />
+                    </object>
+                    <object data="img/assets/Cappucino_1.svg" type="image/svg+xml" width="23%" style="float:right; margin-right:-25px;">
+                      <img src="img/png/Cappucino 1.png" width="23%" style="float:right; margin-right:-25px;" />
+                    </object> 
+                </div>
+
+                <div ng-if="item.name == 'Filter Coffee'">                     
+                    <label> {{item.name}} </label>
+                    <label style="font-size:16px; margin-left:10px; padding:10px; font-style:bold; line-height:3;"> {{item.price}} </label>
+                    <button class="button button-small button-calm" ng-click="addToCart(item)" style="width: 20%; float:right;">
+                        Add to Cart
+                    </button>
+                    <object data="img/assets/Filter_coffee.svg" type="image/svg+xml" width="23%" style="float:right; margin-right:-25px;">
+                      <img src="img/png/Filter coffee.png" width="23%" style="float:right; margin-right:-25px;" />
+                    </object> 
+                </div>
+
+                <div ng-if="item.name == 'Macchiato'">
+                    <label> {{item.name}} </label>
+                    <label style="font-size:16px; margin-left:10px; padding:10px; font-style:bold; line-height:3;"> {{item.price}} </label>
+                    <button class="button button-small button-calm" ng-click="addToCart(item)" style="width: 20%; float:right;">
+                        Add to Cart
+                    </button>
+                    <object data="img/assets/Cappucino_3.svg" type="image/svg+xml" width="23%" style="float:right; margin-right:-25px;">
+                      <img src="img/png/Cappucino 3.png" width="23%" style="float:right; margin-right:-25px;" />
+                    </object>
+                    <object data="img/assets/Cappucino_2.svg" type="image/svg+xml" width="23%" style="float:right; margin-right:-25px;">
+                      <img src="img/png/Cappucino 2.png" width="23%" style="float:right; margin-right:-25px;" />
+                    </object> 
+                    <object data="img/assets/Cappucino_1.svg" type="image/svg+xml" width="23%" style="float:right; margin-right:-25px;">
+                      <img src="img/png/Cappucino 1.png" width="23%" style="float:right; margin-right:-25px;" />
+                    </object>
+                    <object data="img/assets/Espresso_sign.svg" type="image/svg+xml" width="23%" style="float:right; margin-right:-25px;">
+                      <img src="img/png/Espresso sign.png" width="23%" style="float:right; margin-right:-25px;" />
+                    </object> 
+                </div>        
+
+                <div ng-if="item.name == 'Cafe Latte'">                     
+                    <label> {{item.name}} </label>
+                    <label style="font-size:16px; margin-left:10px; padding:10px; font-style:bold; line-height:3;"> {{item.price}} </label>
+                    <button class="button button-small button-calm" ng-click="addToCart(item)" style="width: 20%; float:right;">
+                        Add to Cart
+                    </button>
+                    <object data="img/assets/Late.svg" type="image/svg+xml" width="23%" style="float:right; margin-right:-25px;">
+                      <img src="img/png/Late.png" width="23%" style="float:right; margin-right:-25px;" />
+                    </object> 
+                    <object data="img/assets/Cafe.svg" type="image/svg+xml" width="23%" style="float:right; margin-right:-25px;">
+                      <img src="img/png/Cafe.png" width="23%" style="float:right; margin-right:-25px;" />
+                    </object>
+                </div>
+
+                <div ng-if="item.name == 'Cafe Mocha'">                     
+                    <label> {{item.name}} </label>
+                    <label style="font-size:16px; margin-left:10px; padding:10px; font-style:bold; line-height:3;"> {{item.price}} </label>
+                    <button class="button button-small button-calm" ng-click="addToCart(item)" style="width: 20%; float:right;">
+                        Add to Cart
+                    </button>
+                    <object data="img/assets/Mocha.svg" type="image/svg+xml" width="23%" style="float:right; margin-right:-25px;">
+                      <img src="img/png/Mocha.png" width="23%" style="float:right; margin-right:-25px;" />
+                    </object>
+                    <object data="img/assets/Cafe.svg" type="image/svg+xml" width="23%" style="float:right; margin-right:-25px;">
+                      <img src="img/png/Cafe.png" width="23%" style="float:right; margin-right:-25px;" />
+                    </object> 
+                </div>
+
+                <div ng-if="item.name == 'Decaf Cappucino'">                     
+                    <label> {{item.name}} </label>
+                    <label style="font-size:16px; margin-left:10px; padding:10px; font-style:bold; line-height:3;"> {{item.price}} </label>
+                    <button class="button button-small button-calm" ng-click="addToCart(item)" style="width: 20%; float:right;">
+                        Add to Cart
+                    </button>                    
+                </div>
+                </div>
+                </div>
+            </div>
+            
+            <div ng-show="divShow == 'div2'"> <!-- Tea -->
+                <div class="list list-inset">                  
+                <div class="item" ng-repeat="item in menuListTea">
+                <div ng-if="item.name == 'Red Cappucino'">
+                    <label> {{item.name}} </label>
+                    <label style="font-size:16px; margin-left:10px; padding:10px; font-style:bold; line-height:3;"> {{item.price}} </label>
+                    <button class="button button-small button-calm" ng-click="addToCart(item)" style="width: 20%; float:right;">
+                        Add to Cart
+                    </button>
+                    <!-- <object data="img/assets/Espresso sign.svg" type="image/svg+xml" width="23%" style="float:right; margin-right:15px;">
+                      <img src="img/png/Espresso sign.png" width="23%" style="float:right; margin-right:15px;" />
+                    </object> --> 
+                </div>
+                
+                <div ng-if="item.name == 'Green Tea With Mint'">                     
+                    <label> {{item.name}} </label>
+                    <label style="font-size:16px; margin-left:10px; padding:10px; font-style:bold; line-height:3;"> {{item.price}} </label>
+                    <button class="button button-small button-calm" ng-click="addToCart(item)" style="width: 20%; float:right;">
+                        Add to Cart
+                    </button>
+                    <!-- <object data="img/assets/Espresso sign.svg" type="image/svg+xml" width="23%" style="float:right; margin-right:15px;">
+                      <img src="img/png/Espresso sign.png" width="23%" style="float:right; margin-right:15px;" />
+                    </object> -->
+                </div>
+
+                <div ng-if="item.name == 'Five Roses Earl Grey'">
+                    <label> {{item.name}} </label>
+                    <label style="font-size:16px; margin-left:10px; padding:10px; font-style:bold; line-height:3;"> {{item.price}} </label>
+                    <button class="button button-small button-calm" ng-click="addToCart(item)" style="width: 20%; float:right;">
+                        Add to Cart
+                    </button>
+                    <!-- <object data="img/assets/Cappucino 3.svg" type="image/svg+xml" width="23%" style="float:right; margin-right:15px;">
+                      <img src="img/png/Cappucino 3.png" width="23%" style="float:right; margin-right:15px;" />
+                    </object> -->
+                </div>
+
+                <div ng-if="item.name == 'Five Roses Rooibos Select'">                     
+                    <label> {{item.name}} </label>
+                    <label style="font-size:16px; margin-left:10px; padding:10px; font-style:bold; line-height:3;"> {{item.price}} </label>
+                    <button class="button button-small button-calm" ng-click="addToCart(item)" style="width: 20%; float:right;">
+                        Add to Cart
+                    </button>
+                    <!-- <object data="img/assets/Espresso sign.svg" type="image/svg+xml" width="23%" style="float:right; margin-right:15px;">
+                      <img src="img/png/Espresso sign.png" width="23%" style="float:right; margin-right:15px;" />
+                    </object> -->
+                    <!-- <object data="img/assets/Espresso sign.svg" type="image/svg+xml" width="23%" style="float:right; margin-right:15px;">
+                      <img src="img/png/Espresso sign.png" width="23%" style="float:right; margin-right:15px;" />
+                    </object> -->
+                </div>        
+
+                <div ng-if="item.name == 'Five Roses English Breakfast'">                     
+                    <label> {{item.name}} </label>
+                    <label style="font-size:16px; margin-left:10px; padding:10px; font-style:bold; line-height:3;"> {{item.price}} </label>
+                    <button class="button button-small button-calm" ng-click="addToCart(item)" style="width: 20%; float:right;">
+                        Add to Cart
+                    </button>
+                    <!-- <object data="img/assets/Espresso sign.svg" type="image/svg+xml" width="23%" style="float:right; margin-right:15px;">
+                      <img src="img/png/Espresso sign.png" width="23%" style="float:right; margin-right:15px;" />
+                    </object> -->
+                </div>
+
+                <div ng-if="item.name == 'Chamomile Herbal Tea'">                     
+                    <label> {{item.name}} </label>
+                    <label style="font-size:16px; margin-left:10px; padding:10px; font-style:bold; line-height:3;"> {{item.price}} </label>
+                    <button class="button button-small button-calm" ng-click="addToCart(item)" style="width: 20%; float:right;">
+                        Add to Cart
+                    </button>
+                    <!-- <object data="img/assets/Espresso sign.svg" type="image/svg+xml" width="23%" style="float:right; margin-right:15px;">
+                      <img src="img/png/Espresso sign.png" width="23%" style="float:right; margin-right:15px;" />
+                    </object> --> 
+                </div>
+                </div>
+                </div>
+
+            </div>   
+                  
+  </aui-content>
+
+</script>

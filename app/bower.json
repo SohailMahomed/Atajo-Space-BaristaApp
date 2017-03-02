@@ -1,0 +1,26 @@
+{
+  "name": "barista-app",
+  "description": "Barista App (Atajo)",
+  "main": "index.js",
+  "authors": [
+    "Sohail Mahomed <sohail.mahomed@rocketmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "Barista",
+    "Atajo"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ngstorage": "^0.3.10",
+    "moment": "^2.12.0",
+    "angular-sanitize": "^1.5.5"
+  }
+}
