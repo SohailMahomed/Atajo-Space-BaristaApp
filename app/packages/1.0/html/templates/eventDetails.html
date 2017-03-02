@@ -1,0 +1,26 @@
+<script type="text/ng-template" id="eventDetails.html">
+<aui-view view-title="Event Details">
+  <aui-content>
+     <h2 style="margin: 8px; margin-top:12px;"></h2>
+     <center>
+
+                <p style="margin:30px; font-weight: 100; text-align: center; color: #FFF;">Event Details</p>
+               
+                <label class="item item-input" style="margin-top:70px; background-color:transparent; border-bottem:solid; margin-left:25px; margin-right:25px;">                    
+                    <input ng-model="event.name" type="text" placeholder="Event Name">
+                </label>
+                <label class="item item-input" style="margin-top:15px; background-color:transparent; border-bottem:solid; margin-left:25px; margin-right:25px;">                    
+                    <input ng-model="event.division" type="text" placeholder="Division">
+                </label>
+                
+                </center>    
+                <div style="padding: 16px; margin-top: 70px;">
+                <button class="button button-royal" ng-click="validateEvent()" style="width: 100%;">
+                    Submit
+                </button>
+            </div>
+
+       
+  </aui-content>
+
+</script>

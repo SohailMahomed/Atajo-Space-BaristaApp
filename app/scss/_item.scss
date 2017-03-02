@@ -1,0 +1,66 @@
+.item-image.icon-image {
+    i {
+        line-height: 40px;
+        color: #FFF;
+        font-size: 16px;
+        &.icon {
+            //ionicons
+            &:before {
+                line-height: 40px;
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+/*
+.item.item-royal {
+    color: #FFFFFF;
+    h2 {
+        color: #FFFFFF
+    }
+    p {
+        color: #FFFFFF;
+    }
+    > .item-content {
+        color: #FFFFFF;
+        h2 {
+            color: #FFFFFF
+        }
+        p {
+            color: #FFFFFF;
+        }
+    }
+}*/
+
+.item.item-royal {
+    color: #FFFFFF;
+    h2 {
+        color: #FFFFFF
+    }
+    p {
+        color: #FFFFFF;
+    }
+}
+.item-content {
+        color: #FFFFFF;
+        h2 {
+            color: #FFFFFF
+        }
+        p {
+            color: #FFFFFF;
+        }
+}
+
+
+.item.item-stable.item-pending{
+    border-left: #03A9F4 8px solid;
+}
+
+.item.item-stable.item-expired{
+    border-left: #F44336 8px solid;
+}
+
+.item.item-assessed{
+    border-left: #4CAF50 8px solid;
+}

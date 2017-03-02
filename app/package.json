@@ -1,0 +1,30 @@
+{
+  "name": "barista-app",
+  "version": "1.0.0",
+  "description": "Barista App (Atajo)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node provider/start.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SohailMahomed/Atajo-Space-BaristaApp.git"
+  },
+  "keywords": [
+    "Barista",
+    "Atajo"
+  ],
+  "author": "Sohail Mahomed <sohail.mahomed@rocketmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "event-stream": "^3.3.4",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.12",
+    "gulp-inject": "^4.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^1.5.3",
+    "main-bower-files": "^2.13.1"
+  }
+}

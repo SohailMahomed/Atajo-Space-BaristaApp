@@ -1,0 +1,66 @@
+@import "colours",
+"text",
+"rotate",
+"font",
+"form",
+"bar",
+"modal",
+"layout",
+"misc",
+"content",
+"item",
+"anim";
+
+/**
+         * Hide when Angular is not yet loaded and initialized
+         */
+
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak {
+    display: none !important;
+}
+
+
+
+// .login-back {
+//     background: url('img/rails.jpg') no-repeat center center fixed, linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%);
+//     background: url('img/rails.jpg') no-repeat center center fixed, -webkit-linear-gradient(top, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%);
+//     background-blend-mode: color-dodge;
+//     -webkit-background-size: cover;
+//     -moz-background-size: cover;
+//     -o-background-size: cover;
+//     background-size: cover;
+//     animation: login-pan 60s ease-in-out infinite alternate;
+//     > .list.list-inset {
+//         background-color: rgba(255, 255, 255, 0.5) !important;
+//     }
+// }
+
+.login-back {
+    background-image: url('img/assets/Login_Background.png');
+    background-blend-mode: color-dodge;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    animation: login-pan 60s ease-in-out infinite alternate;
+    > .list.list-inset {
+        background-color: rgba(255, 255, 255, 0.5) !important;
+    }
+}
+
+.form-errors {
+    *, > * {
+        padding: 0px 16px 0px 16px;
+        font-weight: 300;
+        font-size: 10px;
+    }
+    .form-error {
+        line-height: 1.5;
+        color: red;
+    }
+}
